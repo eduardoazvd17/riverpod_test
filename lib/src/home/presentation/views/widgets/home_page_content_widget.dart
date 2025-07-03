@@ -49,7 +49,7 @@ class _HomePageContentState extends ConsumerState<HomePageContentWidget> {
           const Spacer(),
           if (homeViewModelState.address != null) ...[
             Container(
-              padding: EdgeInsets.all(24),
+              padding: const EdgeInsets.all(24),
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.grey),
                 borderRadius: BorderRadius.circular(10),
