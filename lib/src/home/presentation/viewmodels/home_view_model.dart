@@ -19,9 +19,10 @@ class HomeViewModel extends StateNotifier<HomeViewModelState> {
 
   Future<void> getAddressByCep(String cep) async {
     state = HomeViewModelLoadingState();
-    final address = await getAddressByCepUsecase(cep);
-    state = address == null
-        ? HomeViewModelErrorState()
-        : HomeViewModelLoadedState(address: address);
+    final result = await getAddressByCepUsecase(cep);
+    state = result.fold(
+      (failure) => HomeViewModelErrorState(failure: failure),
+      (address) => HomeViewModelLoadedState(address: address),
+    );
   }
 }
