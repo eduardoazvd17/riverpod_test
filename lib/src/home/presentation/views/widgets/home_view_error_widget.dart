@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_test/src/home/presentation/viewmodels/home_view_model.dart';
-import 'package:riverpod_test/src/home/presentation/viewmodels/home_view_model_state.dart';
+import 'package:riverpod_test/src/home/presentation/view_models/home_view_model.dart';
+import 'package:riverpod_test/src/home/presentation/view_models/home_view_model_state.dart';
 
-class HomePageErrorWidget extends ConsumerWidget {
-  const HomePageErrorWidget({super.key});
+class HomeViewErrorWidget extends ConsumerWidget {
+  const HomeViewErrorWidget({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

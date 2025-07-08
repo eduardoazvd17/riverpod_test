@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_test/src/core/utils/formatters.dart';
-import 'package:riverpod_test/src/home/presentation/viewmodels/home_view_model.dart';
+import 'package:riverpod_test/src/home/presentation/view_models/home_view_model.dart';
 
-class HomePageContentWidget extends ConsumerStatefulWidget {
-  const HomePageContentWidget({super.key});
+class HomeViewContentWidget extends ConsumerStatefulWidget {
+  const HomeViewContentWidget({super.key});
 
   @override
-  ConsumerState<HomePageContentWidget> createState() => _HomePageContentState();
+  ConsumerState<HomeViewContentWidget> createState() => _HomePageContentState();
 }
 
-class _HomePageContentState extends ConsumerState<HomePageContentWidget> {
+class _HomePageContentState extends ConsumerState<HomeViewContentWidget> {
   late final TextEditingController _cepController;
 
   @override
