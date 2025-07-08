@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_test/src/features/home/domain/usecases/get_address_by_cep_usecase.dart';
+import 'package:zip_code_search/src/features/home/domain/usecases/get_address_by_cep_usecase.dart';
 
 import 'home_view_model_state.dart';
 

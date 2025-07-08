@@ -1,11 +1,11 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:riverpod_test/src/core/errors/failure.dart';
-import 'package:riverpod_test/src/features/home/domain/entities/address_entity.dart';
-import 'package:riverpod_test/src/features/home/domain/usecases/get_address_by_cep_usecase.dart';
-import 'package:riverpod_test/src/features/home/presentation/view_models/home_view_model.dart';
-import 'package:riverpod_test/src/features/home/presentation/view_models/home_view_model_state.dart';
+import 'package:zip_code_search/src/core/errors/failure.dart';
+import 'package:zip_code_search/src/features/home/domain/entities/address_entity.dart';
+import 'package:zip_code_search/src/features/home/domain/usecases/get_address_by_cep_usecase.dart';
+import 'package:zip_code_search/src/features/home/presentation/view_models/home_view_model.dart';
+import 'package:zip_code_search/src/features/home/presentation/view_models/home_view_model_state.dart';
 
 class MockGetAddressByCepUsecase extends Mock
     implements IGetAddressByCepUsecase {}

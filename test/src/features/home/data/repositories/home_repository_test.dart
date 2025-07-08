@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:riverpod_test/src/features/home/data/datasources/home_datasource.dart';
-import 'package:riverpod_test/src/features/home/data/repositories/home_repository_impl.dart';
-import 'package:riverpod_test/src/features/home/domain/entities/address_entity.dart';
-import 'package:riverpod_test/src/features/home/domain/repositories/home_repository.dart';
+import 'package:zip_code_search/src/features/home/data/datasources/home_datasource.dart';
+import 'package:zip_code_search/src/features/home/data/repositories/home_repository_impl.dart';
+import 'package:zip_code_search/src/features/home/domain/entities/address_entity.dart';
+import 'package:zip_code_search/src/features/home/domain/repositories/home_repository.dart';
 
 class MockHomeDatasource extends Mock implements IHomeDatasource {}
 

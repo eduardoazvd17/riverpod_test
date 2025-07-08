@@ -1,4 +1,4 @@
-package com.example.riverpod_test
+package com.example.zip_code_search
 
 import io.flutter.embedding.android.FlutterActivity
 

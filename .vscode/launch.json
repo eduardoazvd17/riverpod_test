@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "riverpod_test",
+            "name": "zip_code_search",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "riverpod_test (profile mode)",
+            "name": "zip_code_search (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "riverpod_test (release mode)",
+            "name": "zip_code_search (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:riverpod_test/src/features/home/data/datasources/home_datasource.dart';
-import 'package:riverpod_test/src/features/home/domain/entities/address_entity.dart';
+import 'package:zip_code_search/src/features/home/data/datasources/home_datasource.dart';
+import 'package:zip_code_search/src/features/home/domain/entities/address_entity.dart';
 
 class MockHttpClient extends Mock implements Client {}
 

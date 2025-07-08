@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:riverpod_test/src/core/errors/failure.dart';
-import 'package:riverpod_test/src/features/home/domain/entities/address_entity.dart';
-import 'package:riverpod_test/src/features/home/domain/repositories/home_repository.dart';
-import 'package:riverpod_test/src/features/home/domain/usecases/get_address_by_cep_usecase.dart';
+import 'package:zip_code_search/src/core/errors/failure.dart';
+import 'package:zip_code_search/src/features/home/domain/entities/address_entity.dart';
+import 'package:zip_code_search/src/features/home/domain/repositories/home_repository.dart';
+import 'package:zip_code_search/src/features/home/domain/usecases/get_address_by_cep_usecase.dart';
 
 class MockHomeRepository extends Mock implements IHomeRepository {}
 

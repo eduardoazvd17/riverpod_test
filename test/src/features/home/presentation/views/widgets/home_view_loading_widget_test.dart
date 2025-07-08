@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:riverpod_test/src/features/home/presentation/views/widgets/home_view_loading_widget.dart';
+import 'package:zip_code_search/src/features/home/presentation/views/widgets/home_view_loading_widget.dart';
 
 void main() {
   group('HomeViewLoadingWidget Tests', () {

@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_test/src/core/endpoints/endpoints.dart';
-import 'package:riverpod_test/src/features/home/data/models/address_model.dart';
-import 'package:riverpod_test/src/features/home/domain/entities/address_entity.dart';
+import 'package:zip_code_search/src/core/endpoints/endpoints.dart';
+import 'package:zip_code_search/src/features/home/data/models/address_model.dart';
+import 'package:zip_code_search/src/features/home/domain/entities/address_entity.dart';
 import 'package:http/http.dart' as http;
 
 final homeDatasourceProvider = Provider.autoDispose<IHomeDatasource>((ref) {

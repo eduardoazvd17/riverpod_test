@@ -1,6 +1,6 @@
 {
-    "name": "riverpod_test",
-    "short_name": "riverpod_test",
+    "name": "zip_code_search",
+    "short_name": "zip_code_search",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

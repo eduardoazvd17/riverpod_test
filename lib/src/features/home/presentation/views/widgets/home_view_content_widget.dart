@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_test/src/core/utils/formatters.dart';
-import 'package:riverpod_test/src/features/home/presentation/view_models/home_view_model.dart';
+import 'package:zip_code_search/src/core/utils/formatters.dart';
+import 'package:zip_code_search/src/features/home/presentation/view_models/home_view_model.dart';
 
 class HomeViewContentWidget extends ConsumerStatefulWidget {
   const HomeViewContentWidget({super.key});
