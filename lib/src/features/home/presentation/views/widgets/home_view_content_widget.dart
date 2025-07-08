@@ -33,16 +33,19 @@ class _HomePageContentState extends ConsumerState<HomeViewContentWidget> {
     final homeViewModel = ref.watch(homeViewModelProvider.notifier);
 
     return Padding(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
           TextFormField(
             controller: _cepController,
             textAlign: TextAlign.center,
             inputFormatters: Formatters.cep,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               hintText: 'Digite o CEP que deseja buscar...',
               alignLabelWithHint: true,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
             ),
           ),
           const Spacer(),
@@ -50,27 +53,48 @@ class _HomePageContentState extends ConsumerState<HomeViewContentWidget> {
             Container(
               padding: const EdgeInsets.all(24),
               decoration: BoxDecoration(
-                border: Border.all(color: Colors.grey),
-                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: Theme.of(context).primaryColor),
+                borderRadius: BorderRadius.circular(8),
               ),
               child: Text(
                 homeViewModelState.address!.toString(),
                 textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),
             const Spacer(),
           ],
-          Row(
-            children: [
-              Expanded(
-                child: ElevatedButton(
-                  onPressed: () {
-                    homeViewModel.getAddressByCep(_cepController.text);
-                  },
-                  child: const Text('Buscar'),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 24),
+            child: Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStateProperty.all(
+                        Theme.of(context).primaryColor,
+                      ),
+                      foregroundColor: WidgetStateProperty.all(Colors.white),
+                      padding: WidgetStateProperty.all(
+                        const EdgeInsets.symmetric(
+                          vertical: 12,
+                          horizontal: 24,
+                        ),
+                      ),
+                      shape: WidgetStateProperty.all(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                      ),
+                    ),
+                    onPressed: () {
+                      homeViewModel.getAddressByCep(_cepController.text);
+                    },
+                    child: const Text('Buscar'),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
