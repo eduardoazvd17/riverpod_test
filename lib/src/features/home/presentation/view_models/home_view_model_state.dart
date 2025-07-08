@@ -1,5 +1,5 @@
 import 'package:riverpod_test/src/core/errors/failure.dart';
-import 'package:riverpod_test/src/home/domain/entities/address_entity.dart';
+import 'package:riverpod_test/src/features/home/domain/entities/address_entity.dart';
 
 sealed class HomeViewModelState {
   final AddressEntity? address;
@@ -7,7 +7,7 @@ sealed class HomeViewModelState {
 }
 
 class HomeViewModelLoadedState extends HomeViewModelState {
-  HomeViewModelLoadedState({super.address});
+  HomeViewModelLoadedState({required super.address});
 }
 
 class HomeViewModelLoadingState extends HomeViewModelState {}

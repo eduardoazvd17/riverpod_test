@@ -1,4 +1,4 @@
-import 'package:riverpod_test/src/home/domain/entities/address_entity.dart';
+import 'package:riverpod_test/src/features/home/domain/entities/address_entity.dart';
 
 class AddressModel extends AddressEntity {
   AddressModel({

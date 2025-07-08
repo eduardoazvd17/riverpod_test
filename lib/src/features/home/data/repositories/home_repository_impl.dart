@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
 import 'package:riverpod_test/src/core/errors/failure.dart';
-import 'package:riverpod_test/src/home/data/datasources/home_datasource.dart';
-import 'package:riverpod_test/src/home/domain/entities/address_entity.dart';
-import 'package:riverpod_test/src/home/domain/repositories/home_repository.dart';
+import 'package:riverpod_test/src/features/home/data/datasources/home_datasource.dart';
+import 'package:riverpod_test/src/features/home/domain/entities/address_entity.dart';
+import 'package:riverpod_test/src/features/home/domain/repositories/home_repository.dart';
 
 class HomeRepositoryImpl implements IHomeRepository {
   final IHomeDatasource datasource;

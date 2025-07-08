@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_test/src/home/domain/usecases/get_address_by_cep_usecase.dart';
+import 'package:riverpod_test/src/features/home/domain/usecases/get_address_by_cep_usecase.dart';
 
 import 'home_view_model_state.dart';
 
@@ -13,9 +13,9 @@ final homeViewModelProvider =
 class HomeViewModel extends StateNotifier<HomeViewModelState> {
   final IGetAddressByCepUsecase getAddressByCepUsecase;
   HomeViewModel({required this.getAddressByCepUsecase})
-    : super(HomeViewModelLoadedState());
+    : super(HomeViewModelLoadedState(address: null));
 
-  void resetState() => state = HomeViewModelLoadedState();
+  void resetState() => state = HomeViewModelLoadedState(address: null);
 
   Future<void> getAddressByCep(String cep) async {
     state = HomeViewModelLoadingState();
