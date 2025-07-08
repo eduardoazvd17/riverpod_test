@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:riverpod_test/src/core/errors/failure.dart';
-import 'package:riverpod_test/src/features/home/domain/entities/address_entity.dart';
 import 'package:riverpod_test/src/features/home/domain/usecases/get_address_by_cep_usecase.dart';
 import 'package:riverpod_test/src/features/home/presentation/view_models/home_view_model.dart';
 import 'package:riverpod_test/src/features/home/presentation/view_models/home_view_model_state.dart';
@@ -76,11 +75,3 @@ void main() {
     });
   });
 }
-
-final _mockAddress = AddressEntity(
-  cep: '22743-040',
-  address: 'Estrada Capenha',
-  neighborhood: 'Pechincha',
-  city: 'Rio de Janeiro',
-  state: 'RJ',
-);
