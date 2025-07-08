@@ -53,12 +53,12 @@ void main() {
       );
 
       //Act
-      await tester.enterText(find.byType(TextFormField), '22743-040');
+      await tester.enterText(find.byType(TextFormField), '12345-678');
       await tester.tap(find.byType(ElevatedButton));
       await tester.pumpAndSettle();
 
       //Assert
-      verify(() => usecase.call('22743-040')).called(1);
+      verify(() => usecase.call('12345-678')).called(1);
       expect(find.text(_mockAddress.toString()), findsOneWidget);
     });
 
@@ -80,9 +80,9 @@ void main() {
 }
 
 final _mockAddress = AddressEntity(
-  cep: '22743-040',
-  address: 'Estrada Capenha',
-  neighborhood: 'Pechincha',
+  cep: '12345-678',
+  address: 'Testing Street',
+  neighborhood: 'Testing',
   city: 'Rio de Janeiro',
   state: 'RJ',
 );

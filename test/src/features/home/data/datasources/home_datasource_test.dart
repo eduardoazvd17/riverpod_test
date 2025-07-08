@@ -26,7 +26,7 @@ void main() {
         });
 
         //Act
-        final result = await datasource.getAddressByCep('22743-040');
+        final result = await datasource.getAddressByCep('12345-678');
 
         //Expect
         expect(result, isA<AddressEntity>());
@@ -40,7 +40,7 @@ void main() {
         when(() => httpClient.get(any())).thenThrow(Exception());
 
         //Act
-        final result = datasource.getAddressByCep('22743-040');
+        final result = datasource.getAddressByCep('12345-678');
 
         //Assert
         expect(result, throwsA(isA<Exception>()));
@@ -51,11 +51,11 @@ void main() {
 
 const _mockResponse = '''
 {
-  "cep": "22743-040",
-  "logradouro": "Estrada Capenha",
+  "cep": "12345-678",
+  "logradouro": "Testing Street",
   "complemento": "até 99998 - lado par",
   "unidade": "",
-  "bairro": "Pechincha",
+  "bairro": "Testing",
   "localidade": "Rio de Janeiro",
   "uf": "RJ",
   "estado": "Rio de Janeiro",

@@ -26,7 +26,7 @@ void main() {
         });
 
         //Act
-        final result = await repository.getAddressByCep('22743-040');
+        final result = await repository.getAddressByCep('12345-678');
 
         //Assert
         expect(result.isRight(), true);
@@ -40,7 +40,7 @@ void main() {
         when(() => datasource.getAddressByCep(any())).thenThrow(Exception());
 
         //Act
-        final result = await repository.getAddressByCep('22743-040');
+        final result = await repository.getAddressByCep('12345-678');
 
         //Assert
         expect(result.isLeft(), true);
@@ -50,9 +50,9 @@ void main() {
 }
 
 final _mockAddress = AddressEntity(
-  cep: '22743-040',
-  address: 'Estrada Capenha',
-  neighborhood: 'Pechincha',
+  cep: '12345-678',
+  address: 'Testing Street',
+  neighborhood: 'Testing',
   city: 'Rio de Janeiro',
   state: 'RJ',
 );

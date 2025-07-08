@@ -29,7 +29,7 @@ void main() {
         });
 
         //Act
-        await viewModel.getAddressByCep('22743-040');
+        await viewModel.getAddressByCep('12345-678');
 
         //Assert
         expect(viewModel.state, isA<HomeViewModelLoadedState>());
@@ -46,7 +46,7 @@ void main() {
         });
 
         //Act
-        await viewModel.getAddressByCep('22743-040');
+        await viewModel.getAddressByCep('12345-678');
 
         //Assert
         expect(viewModel.state, isA<HomeViewModelErrorState>());
@@ -76,9 +76,9 @@ void main() {
 }
 
 final _mockAddress = AddressEntity(
-  cep: '22743-040',
-  address: 'Estrada Capenha',
-  neighborhood: 'Pechincha',
+  cep: '12345-678',
+  address: 'Testing Street',
+  neighborhood: 'Testing',
   city: 'Rio de Janeiro',
   state: 'RJ',
 );
