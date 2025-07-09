@@ -58,7 +58,6 @@ class _HomePageContentState extends ConsumerState<HomeViewContentWidget> {
               ),
               child: Text(
                 homeViewModelState.address!.toString(),
-                textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
             ),

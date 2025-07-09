@@ -15,6 +15,6 @@ class AddressEntity {
 
   @override
   String toString() {
-    return 'CEP: $cep\nAddress: $address\nNeighborhood: $neighborhood\nCity: $city\nState: $state';
+    return 'CEP: $cep\nEndereço: $address\nBairro: $neighborhood\nCidade: $city\nEstado: $state';
   }
 }
